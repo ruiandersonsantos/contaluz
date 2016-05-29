@@ -13,34 +13,37 @@
         <!-- CSS personalizado -->
         <link href = "<?= base_url("css_b/simple-sidebar.css") ?>" rel = "stylesheet" media = "screen">
 
-
         <title>Area Administrativa</title>
     </head>
 
     <body>
 
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="navPrincipal">
+            <div class="container-fluid col-xs-12" style="padding-left: 0px; padding-right: 0px;">
 
-            <a style="float: left; margin-left:10px; " href="#menu-toggle"  class="navbar-toggle" id="menu-toggle">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </a>
+                <div class="col-xs-2" style="padding-left: 0px; padding-right: 0px;">
+                    <a style="float: left; margin-left: 10px;" href="#menu-toggle"  class="navbar-toggle" id="menu-toggle">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                </div>
 
-            <div class="container-fluid col-xs-8">
+                <div class="col-xs-8" style="padding-left: 0px; padding-right: 0px;">
+                    <div>
+                        <span style="color: white; width: 100%; text-align: center; padding-left: 0px; padding-right: 0px;" class="navbar-brand">
+                            CALCULA CONTA
+                        </span>
+                    </div>
+                </div>
 
-                <a style="color: white; width: 100%; text-align: center;" href="<?= base_url("/index.php/usuario/login") ?>" class="navbar-brand">
-                    DEVMEDIA
-
-                </a>
+                <div class="col-xs-2" style="padding-left: 0px; padding-right: 0px;">
+                    <?php if ($this->session->userdata("usuario_logado")['origem'] == 'FACEBOOK') : ?>
+                        <img style="height: 35px; margin-right: 10px; margin-top: 8px; float: right;" src="<?= $this->session->userdata("usuario_logado")['picture']['data']['url'] ?>"/>
+                    <?php endif ?>
+                </div>
 
             </div>
-
-
-            <?php if ($this->session->userdata("usuario_logado")['origem'] == 'FACEBOOK') : ?>
-                <img style="height: 35px; margin-right: 10px; margin-top: 8px; float: right;" src="<?= $this->session->userdata("usuario_logado")['picture']['data']['url'] ?>"/>
-            <?php endif ?>
-
 
             <div id="wrapper" >
                 <!-- Sidebar -->
