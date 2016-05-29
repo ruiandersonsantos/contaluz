@@ -69,7 +69,7 @@
 
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="<?= base_url("/index.php/configuracao") ?>">
                                 <span class="glyphicon glyphicon-cog " aria-hidden="true"></span>
                                 Configurações
                             </a>
