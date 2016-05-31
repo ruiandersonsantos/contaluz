@@ -4,32 +4,32 @@
 
 <section class="sessao_cadastroCorretor">
     <div class="container">
+        <div class="col-xs-offset-2 col-xs-10">
+            <h1><?= $this->session->flashdata("sucesso") ?></h1>
+
+            <?php if ($this->session->userdata("usuario_logado")) : ?>
+
+                <form class="form-horizontal" id="form_login" method="post" action="configuracao/teste">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <?php include("mensagem.php") ?>
 
 
-        <h1><?= $this->session->flashdata("sucesso") ?></h1>
+                            <h1 style="border-bottom: 1px black solid;">
+                                <strong>Configurações das Tarifas</strong>
+                            </h1>
 
-        <?php if ($this->session->userdata("usuario_logado")) : ?>
-            <form class="form-horizontal" id="form_login" method="post" action="configuracao/teste">
-                <div class="row">
-                    <?php include("mensagem.php") ?>
+                            <div class="form-group formulario">                    
+                                <div class="col-xs-10">
+                                    <input type="number" class="form-control" id="tarifaNormal" placeholder="Tarifa Normal"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
 
-                </div>
-
-                <h1>Pagina de configuração</h1>
-                <div class="btn-group" data-toggle="buttons">
-                    <label class="btn btn-success active">
-                        <input type="radio" name="options" value="Rui" id="option1" autocomplete="off" checked> Sim
-                    </label>
-                    <label class="btn btn-danger">
-                        <input type="radio" name="options" value="Simone" id="option2" autocomplete="off"> Não
-                    </label>
-
-                </div>
-
-                <input type="submit" value="Enviar"/>
-
-            </form>
-        <?php endif ?>
+            <?php endif ?>
+        </div>
     </div>
 </section>
 

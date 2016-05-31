@@ -31,11 +31,8 @@ class Configuracao extends CI_Controller {
     }
     
     
-    public function teste() {
-        
-         $notifica = $this->input->post("options");
-         
-         echo $notifica;
+    public function simone() {
+        $this->load->view('app/teste');
     }
-
+   
 }

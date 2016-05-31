@@ -5,7 +5,9 @@ $(document).ready(function () {
         $("#wrapper").toggleClass("toggled");
     });
 
-
+    $(".bootstrap-switch-handle-on").html("Sim");
+    $(".bootstrap-switch-handle-off").html("Não");
+  
  
 
 });
