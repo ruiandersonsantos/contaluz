@@ -10,38 +10,76 @@
             <div class="col-xs-12">
                 <form class="form-horizontal" id="form_login" method="post" action="configuracao/teste" style="max-width: 100%; margin: 5px;">
                     <div class="row">
-                        <div class="col-xs-12">
+                        <div>
                             <?php include("mensagem.php") ?>
 
 
-                            <h4 style="border-bottom: 1px black solid; margin-bottom: 10px;">
-                                <strong>Configurações das Tarifas</strong>
-                            </h4>
+                            <h5 style="border-bottom: 1px black solid; margin-bottom: 10px; text-align: left;">
+                                <strong>TARIFAS</strong>
+                            </h5>
                             <br />
 
+                            <div class="col-xs-12">
+
+                            </div>
+
                             <div class="form-group formulario">                    
-                                <div class=" col-xs-offset-1 col-xs-10">
-                                    <input type="number" class="form-control" id="tarifaNormal" placeholder="Tarifa Normal"/>
+                                <div class="col-xs-12">
+                                    <div class="input-group">
+                                        <span class="input-group-btn">
+                                            <button type="button" class="btn btn-success">
+                                                <span class="glyphicon glyphicon-flag"></span>
+                                            </button>
+                                        </span>
+                                        <input type="number" placeholder="Informe a tarifa verde" class="form-control"/>
+                                    </div>
                                 </div>
                             </div>
 
                             <div class="form-group formulario">                    
-                                <div class=" col-xs-offset-1 col-xs-10">
-                                    <input type="number" class="form-control" id="tarifaVermelha" placeholder="Tarifa Vermelha"/>
+                                <div class="col-xs-12">
+                                    <div class="input-group">
+                                        <span class="input-group-btn">
+                                            <button type="button" class="btn btn-warning" style="background: gold;">
+                                                <span class="glyphicon glyphicon-flag"></span>
+                                            </button>
+                                        </span>
+                                        <input type="number" placeholder="Informe a tarifa amarela" class="form-control"/>
+                                    </div>
                                 </div>
                             </div>
 
                             <div class="form-group formulario">                    
-                                <div class=" col-xs-offset-1 col-xs-10">
-                                    <input type="number" class="form-control" id="taxaIluminacao" placeholder="Taxa de Iluminação"/>
+                                <div class="col-xs-12">
+                                    <div class="input-group">
+                                        <span class="input-group-btn">
+                                            <button type="button" class="btn btn-danger">
+                                                <span class="glyphicon glyphicon-flag"></span>
+                                            </button>
+                                        </span>
+                                        <input type="number" placeholder="Informe a tarifa vermelha" class="form-control"/>
+                                    </div>
                                 </div>
                             </div>
 
-                            <br />
-                            <br />
-                            <h4 style="border-bottom: 1px black solid; margin-bottom: 10px;">
-                                <strong>Configurações de Notificação</strong>
-                            </h4>
+                            <div class="form-group formulario">                    
+                                <div class="col-xs-12">
+                                    <div class="input-group">
+                                        <span class="input-group-btn">
+                                            <button type="button" class="btn btn-primary">
+                                                <span class="glyphicon glyphicon-flash"></span>
+                                            </button>
+                                        </span>
+                                        <input type="number" placeholder="Informe a taxa de iluminação" class="form-control"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <br/>
+
+                            <h5 style="border-bottom: 1px black solid; margin-bottom: 10px; text-align: left;">
+                                <strong>NOTIFICAÇÃO</strong>
+                            </h5>
                             <br />
 
 
@@ -56,18 +94,31 @@
                             </div>
 
                             <div class="form-group formulario">                    
-                                <div class=" col-xs-offset-1 col-xs-10">
-                                    <input type="number" class="form-control" id="diaNotificacao" placeholder="Dia a ser Notificado"/>
+                                <div class="col-xs-12">
+                                    <div class="input-group">
+                                        <span class="input-group-btn">
+                                            <button type="button" class="btn btn-default">
+                                                <span class="glyphicon glyphicon-calendar"></span>
+                                            </button>
+                                        </span>
+                                        <input type="number" placeholder="Dia da notificação" class="form-control"/>
+                                    </div>
                                 </div>
                             </div>
 
                             <div class="form-group formulario">                    
-                                <div class=" col-xs-offset-1 col-xs-10">
-                                    <input type="number" class="form-control" id="horaNotificacao" placeholder="Hoda da Notificação" style="margin-bottom: 10px;"/>
+                                <div class="col-xs-12">
+                                    <div class="input-group">
+                                        <span class="input-group-btn">
+                                            <button type="button" class="btn btn-default">
+                                                <span class="glyphicon glyphicon-time"></span>
+                                            </button>
+                                        </span>
+                                        <input type="number" placeholder="Hora da notificação" class="form-control"/>
+                                    </div>
                                 </div>
                             </div>
-                            
-                            
+
 
                             <div style="border-top: 1px solid black;">
                                 <button type="submit" class="btn btn-primary col-xs-offset-1 col-xs-10" style="margin-top: 20px;">Gravar</button>
