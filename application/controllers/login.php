@@ -40,9 +40,7 @@ class Login extends CI_Controller {
       
         $teste = '';
         if ($this->uid) {
-              
-       
-        
+          
           
             try {
                 $usuario = $this->facebook->api('/me?fields=email,first_name,last_name,gender,name,id,birthday,picture');

@@ -8,19 +8,15 @@
 <section class="sessao_principal">
     <div class="container">
 
+        <?php if ($this->session->userdata("usuario_logado")) : ?>
+            <div style="margin-top: 70px;">
+                <?php include("mensagem.php") ?>
+            </div>
+        <?php endif ?>
 
-        <h1><?= $this->session->flashdata("sucesso") ?></h1>
-        
         <?php if (!$this->session->userdata("usuario_logado")) : ?>
             <form class="form-horizontal" id="form_login" method="post" action="logar">
-                <div class="row">
-                    <?php include("mensagem.php") ?>
-                                  
-                </div>
-                
-                <h1>teste</h1>
-                    
-                
+
                 <a href="<?= base_url("/index.php/login/loginfacebook") ?>">Login com Facebook</a>
                 <br>
                 <a href="<?= base_url("/index.php/login/loginGoogle") ?>">Login com Google</a>
