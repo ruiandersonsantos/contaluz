@@ -5,7 +5,7 @@
 <?php if (!$this->session->userdata("usuario_logado")) : ?>
     <?php include("cabecalhosemmenu.php") ?>
 <?php endif ?>
-<section class="sessao_cadastroCorretor">
+<section class="sessao_principal">
     <div class="container">
 
 

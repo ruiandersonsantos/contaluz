@@ -2,13 +2,11 @@
     <?php include("cabecalho.php") ?>
 <?php endif ?>
 
-<section class="sessao_cadastroCorretor" style="margin-top: 40px;">
+<section class="sessao_principal" style="margin-top: 40px;">
     <div class="container  col-xs-12" style="float: none;">
         <div class="">
-            <h1><?= $this->session->flashdata("sucesso") ?></h1>
-
             <div class="col-xs-12">
-                <form class="form-horizontal" id="form_login" method="post" action="configuracao/teste" style="max-width: 100%; margin: 5px;">
+                <form class="form-horizontal" id="form_login" method="post" action="configuracao/saveConfig" style="max-width: 100%; margin: 5px;">
                     <div class="row">
                         <div>
                             <?php include("mensagem.php") ?>
@@ -19,10 +17,7 @@
                             </h5>
                             <br />
 
-                            <div class="col-xs-12">
-
-                            </div>
-
+                            <input type="hidden" size="80" value="<?= $config['id'] ?>" name="id" id="id"/>
                             <div class="form-group formulario">                    
                                 <div class="col-xs-12">
                                     <div class="input-group">
@@ -31,7 +26,7 @@
                                                 <span class="glyphicon glyphicon-flag"></span>
                                             </button>
                                         </span>
-                                        <input type="number" placeholder="Informe a tarifa verde" class="form-control"/>
+                                        <input step="any" value="<?= $config['tarifa_verde'] ?>" name="tarifa_verde" id="tarifa_verde" type="number" placeholder="Informe a tarifa verde" class="form-control"/>
                                     </div>
                                 </div>
                             </div>
@@ -44,7 +39,7 @@
                                                 <span class="glyphicon glyphicon-flag"></span>
                                             </button>
                                         </span>
-                                        <input type="number" placeholder="Informe a tarifa amarela" class="form-control"/>
+                                        <input step="any" value="<?= $config['tarifa_amarela'] ?>" name="tarifa_amarela" id="tarifa_amarela" type="number" placeholder="Informe a tarifa amarela" class="form-control"/>
                                     </div>
                                 </div>
                             </div>
@@ -57,7 +52,7 @@
                                                 <span class="glyphicon glyphicon-flag"></span>
                                             </button>
                                         </span>
-                                        <input type="number" placeholder="Informe a tarifa vermelha" class="form-control"/>
+                                        <input step="any" value="<?= $config['tarifa_vermelha'] ?>" name="tarifa_vermelha" id="tarifa_vermelha" type="number" placeholder="Informe a tarifa vermelha" class="form-control"/>
                                     </div>
                                 </div>
                             </div>
@@ -70,7 +65,7 @@
                                                 <span class="glyphicon glyphicon-flash"></span>
                                             </button>
                                         </span>
-                                        <input type="number" placeholder="Informe a taxa de iluminação" class="form-control"/>
+                                        <input step="any" value="<?= $config['taxa_iluminacao'] ?>" name="taxa_iluminacao" id="taxa_iluminacao" type="number" placeholder="Informe a taxa de iluminação" class="form-control"/>
                                     </div>
                                 </div>
                             </div>
@@ -89,7 +84,7 @@
 
                                 <div class="col-xs-offset-1 col-xs-10">
                                     <label for="tipo"  control-label>Notificar:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                                    <input type="checkbox" >
+                                    <input <?= $config['notifica'] ?> type="checkbox" name="notifica" id="notifica">
                                 </div>
                             </div>
 
@@ -101,7 +96,7 @@
                                                 <span class="glyphicon glyphicon-calendar"></span>
                                             </button>
                                         </span>
-                                        <input type="number" placeholder="Dia da notificação" class="form-control"/>
+                                        <input min="1" max="31" value="<?= $config['dia_notifica'] ?>" name="dia_notifica" id="dia_notifica" type="number" placeholder="Dia da notificação" class="form-control"/>
                                     </div>
                                 </div>
                             </div>
@@ -114,7 +109,7 @@
                                                 <span class="glyphicon glyphicon-time"></span>
                                             </button>
                                         </span>
-                                        <input type="number" placeholder="Hora da notificação" class="form-control"/>
+                                        <input min="0" max="24" value="<?= $config['hora_notifica'] ?>" name="hora_notifica" id="hora_notifica" type="number" placeholder="Hora da notificação" class="form-control"/>
                                     </div>
                                 </div>
                             </div>
