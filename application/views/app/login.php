@@ -19,7 +19,7 @@
 
                 <a href="<?= base_url("/index.php/login/loginfacebook") ?>">Login com Facebook</a>
                 <br>
-                <a href="<?= base_url("/index.php/login/loginGoogle") ?>">Login com Google</a>
+                <p><a href="<?php echo $login_url;?>">Login Google</a></p>
             </form>
         <?php endif ?>
     </div>

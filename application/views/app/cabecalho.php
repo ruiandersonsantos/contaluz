@@ -45,6 +45,11 @@
                     <?php if ($this->session->userdata("usuario_logado")['origem'] == 'FACEBOOK') : ?>
                         <img style="height: 35px; margin-right: 10px; margin-top: 8px; float: right;" src="<?= $this->session->userdata("usuario_logado")['picture']['data']['url'] ?>"/>
                     <?php endif ?>
+                        
+                        
+                      <?php if ($this->session->userdata("usuario_logado")['origem'] == 'GOOGLE') : ?>
+                        <img style="height: 35px; margin-right: 10px; margin-top: 8px; float: right;" src="<?= $this->session->userdata("usuario_logado")['picture'] ?>"/>
+                    <?php endif ?>   
                 </div>
 
             </div>
