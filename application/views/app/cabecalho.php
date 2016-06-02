@@ -22,38 +22,40 @@
 
     <body>
 
+        <!-- navbar logado -->
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="navPrincipal">
-            <div class="container-fluid col-xs-12" style="padding-left: 0px; padding-right: 0px;">
+            <div class="container-fluid col-xs-12" id="div_container-fluid">
 
-                <div class="col-xs-2" style="padding-left: 0px; padding-right: 0px;">
-                    <a style="float: left; margin-left: 10px;" href="#menu-toggle"  class="navbar-toggle" id="menu-toggle">
+                <div class="col-xs-2" id="div_menu-toogle">
+                    <a class="navbar-toggle" id="menu-toggle" href="#menu-toggle">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </a>
                 </div>
 
-                <div class="col-xs-8" style="padding-left: 0px; padding-right: 0px;">
+                <div class="col-xs-8" id="div_navbar-brand">
                     <div>
-                        <span style="color: white; width: 100%; text-align: center; padding-left: 0px; padding-right: 0px;" class="navbar-brand">
+                        <span class="navbar-brand" id="span_navbar-brand">
                             CALCULA CONTA
                         </span>
                     </div>
                 </div>
 
-                <div class="col-xs-2" style="padding-left: 0px; padding-right: 0px;">
+                <div class="col-xs-2" id="div_msg_logado">
                     <?php if ($this->session->userdata("usuario_logado")['origem'] == 'FACEBOOK') : ?>
-                        <img style="height: 35px; margin-right: 10px; margin-top: 8px; float: right;" src="<?= $this->session->userdata("usuario_logado")['picture']['data']['url'] ?>"/>
+                        <img id="img_msg_logado-face" src="<?= $this->session->userdata("usuario_logado")['picture']['data']['url'] ?>"/>
                     <?php endif ?>
                         
                         
                       <?php if ($this->session->userdata("usuario_logado")['origem'] == 'GOOGLE') : ?>
-                        <img style="height: 35px; margin-right: 10px; margin-top: 8px; float: right;" src="<?= $this->session->userdata("usuario_logado")['picture'] ?>"/>
+                        <img id="img_msg_logado-google" src="<?= $this->session->userdata("usuario_logado")['picture'] ?>"/>
                     <?php endif ?>   
                 </div>
 
             </div>
 
+            <!-- wrapper -->
             <div id="wrapper" >
                 <!-- Sidebar -->
                 <div id="sidebar-wrapper">
@@ -104,10 +106,14 @@
 
                     </ul>
                 </div>
+                <!-- fim - Sidebar -->
+            </div>
+            <!-- fim - wrapper -->
         </nav>
+        <!-- fim - navbar logado -->
 
 
-        <!-- /#wrapper -->
+        
 
 
 
