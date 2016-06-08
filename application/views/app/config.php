@@ -10,6 +10,23 @@
                     <div class="row">
                         <div>
                             <?php include("mensagem.php") ?>
+                            
+                            <h5 style="border-bottom: 1px black solid; margin-bottom: 10px; text-align: left;">
+                                <strong>kWh final da ultima conta</strong>
+                            </h5>
+                            
+                             <div class="form-group formulario">                    
+                                <div class="col-xs-12">
+                                    <div class="input-group">
+                                        <span class="input-group-btn">
+                                            <button  type="button" class="btn btn-primary">
+                                                <span class="glyphicon glyphicon-modal-window"></span>
+                                            </button>
+                                        </span>
+                                        <input  required=""  value="<?= $config['kwh_ultima'] ?>" name="kwh_ultima" id="kwh_ultima" type="number" placeholder="Marcação inicial para calculo." class="form-control"/>
+                                    </div>
+                                </div>
+                            </div>
 
 
                             <h5 style="border-bottom: 1px black solid; margin-bottom: 10px; text-align: left;">

@@ -12,7 +12,7 @@ class Configuracao extends CI_Controller {
     }
 
     public function index() {
-
+        autoriza();
         $id_usuario = $this->session->userdata("usuario_logado")['id'];
 
         $configuracao = $this->config_model->buscarConfiguracao($id_usuario);
@@ -26,6 +26,7 @@ class Configuracao extends CI_Controller {
             $configuracao['notifica'] = "";
             $configuracao['dia_notifica'] = "";
             $configuracao['hora_notifica'] = "";
+            $configuracao['kwh_ultima'] = "";
         }
 
         if ($configuracao['notifica'] != 0) {
@@ -38,7 +39,7 @@ class Configuracao extends CI_Controller {
     }
 
     public function saveConfig() {
-
+        autoriza();
         $salvou = false;
         $configuracao_atualiza = $this->input->post();
 

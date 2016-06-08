@@ -67,7 +67,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="<?= base_url("/index.php/calculo") ?>">
                                 <span class="glyphicon glyphicon-list-alt " aria-hidden="true"></span>
                                 Calculo
                             </a>
