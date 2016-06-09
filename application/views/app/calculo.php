@@ -11,7 +11,6 @@
                         <div>
                             <?php include("mensagem.php") ?>
 
-
                             <div class="panel panel-info">
                                 <div class="panel-heading">
                                     <h3 class="panel-title">Marcações para cálculo</h3>
@@ -38,7 +37,7 @@
                                                         <span class="glyphicon glyphicon-modal-window"></span>
                                                     </button>
                                                 </span>
-                                                <input min="<?= $config['kwh_ultima'] + 1 ?>" value="" name="kwh_relogio" id="kwh_relogio" type="number" placeholder="Informe o Kwh atual" class="form-control"/>
+                                                <input  min="<?= $config['kwh_ultima'] + 1 ?>" value="" name="kwh_relogio" id="kwh_relogio" type="number" placeholder="Informe o Kwh atual" class="form-control"/>
                                             </div>
                                         </div>
                                     </div>
