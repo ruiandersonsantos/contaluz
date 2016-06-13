@@ -54,13 +54,9 @@
     </div>
 </section>
 
-<script src="<?= base_url("js_b/jquery-1.11.3.min.js") ?>"></script>
-<script src="<?= base_url("js_b/bootstrap.min.js") ?>"></script>
-<script src="<?= base_url("js_b/bootstrap-switch.js") ?>"></script>
-
-<script src="<?= base_url("js_b/main.js") ?>"></script>
-<script src="<?= base_url("js_b/highlight.js") ?>"></script>
-<script src="<?= base_url("js_b/jscript.js") ?>"></script>
+<script src="<?= base_url("js/jquery-2.1.1.min.js") ?>"></script>
+<script src="<?= base_url("js/materialize.min.js") ?>"></script>
+<script src="<?= base_url("js/jscript.js") ?>"></script>
 </body>
 </html>
 
