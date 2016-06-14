@@ -59,9 +59,9 @@
     </div>
 </section>
 
-<script src="<?= base_url("js/jquery-2.1.1.min.js") ?>"></script>
-<script src="<?= base_url("js/materialize.min.js") ?>"></script>
-<script src="<?= base_url("js/jscript.js") ?>"></script>
+<script src="<?= base_url("js_b/jquery-2.1.1.min.js") ?>"></script>
+<script src="<?= base_url("js_b/bootstrap.min.js") ?>"></script>
+<script src="<?= base_url("js_b/jscript.js") ?>"></script>
 </body>
 </html>
 
