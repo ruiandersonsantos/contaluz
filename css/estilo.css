@@ -27,7 +27,7 @@
 }
 
 .espacamentoSuperior {
-    //margin-top: 89vh;
+    margin-top: 89vh;
    
 }
 
@@ -220,7 +220,7 @@ footer.page-footer {
 }
 
 #divContato2, #divContato3 {
-   // margin-top: 0px;
+    margin-top: 0px;
 }
 
 #divContato2 span {

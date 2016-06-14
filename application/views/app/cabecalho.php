@@ -29,7 +29,7 @@
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  id="menu-toggle">
                     <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
                 </button>
-                <a class="navbar-brand" href="#"><i class="fa fa-rocket fa-4"></i> Calcula Conta de Luz</a>
+                <a class="navbar-brand" href="#">Calcula Conta de Luz</a>
             </div><!-- navbar-header-->
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -45,19 +45,24 @@
             <div id="sidebar-wrapper">
                 <ul class="sidebar-nav nav-pills nav-stacked" id="menu">
 
-                    <li>
-                        <div style="float: right;"id="div_msg_logado">
+
+                    <div id="div_topo_menu"> 
+                        <div>
                             <?php if ($this->session->userdata("usuario_logado")['origem'] == 'FACEBOOK') : ?>
-                                <img id="img_msg_logado-face" src="<?= $this->session->userdata("usuario_logado")['picture']['data']['url'] ?>"/>
+                                <img class="img-circle" id="img_msg_logado-face" src="<?= $this->session->userdata("usuario_logado")['picture']['data']['url'] ?>"/>
                             <?php endif ?>
 
 
                             <?php if ($this->session->userdata("usuario_logado")['origem'] == 'GOOGLE') : ?>
-                                <img id="img_msg_logado-google" src="<?= $this->session->userdata("usuario_logado")['picture'] ?>"/>
-                            <?php endif ?>   
+                                <img class="img-circle" id="img_msg_logado-google" src="<?= $this->session->userdata("usuario_logado")['picture'] ?>"/>
+                            <?php endif ?>
                         </div>
 
-                    </li>
+                        <div id="div_nome">
+                            <Strong ><?= $this->session->userdata("usuario_logado")['name'] ?></strong>
+                        </div>
+                    </div>
+
 
                     <li class="sidebar-brand">
                         <a href="<?= base_url("/index.php/login") ?>">

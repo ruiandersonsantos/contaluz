@@ -1,8 +1,11 @@
 @charset "UTF-8";
 
+@import url(https://fonts.googleapis.com/css?family=Oxygen);
+
 /* CSS personalizado */
 body{
     margin-bottom: -11px;
+    
 }
 
 /* Cabeçalho logado */
@@ -34,16 +37,35 @@ body{
     padding-right: 0px;
 }
 
+#div_topo_menu {
+    height: 130px;
+    background: url(../imagens/imagem002.png);
+    
+}
+
+#div_nome {   
+    text-align: center;
+    font-family: 'Oxygen', sans-serif;
+    color: white;
+    font-size: 20px;
+    margin-top: 7px;
+    height: max-content;
+}
+
 #div_msg_logado {
     padding-left: 0px; 
     padding-right: 0px;
 }
 
 #img_msg_logado-face, #img_msg_logado-google {
-    height: 35px; 
-    margin-right: 10px; 
-    margin-top: 8px; 
-    float: right;
+    height: 50px; 
+    width: 50px;
+    position: relative;
+    margin-top: 15px;
+    top:50%;
+    left:40%;
+
+
 }
 
 
@@ -57,9 +79,9 @@ body{
 }
 
 /* Fim - Sessão principal */
- /* Toggle Styles */
- 
- #wrapper {
+/* Toggle Styles */
+
+#wrapper {
     padding-left: 0;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -67,12 +89,12 @@ body{
     transition: all 0.5s ease;
     overflow: hidden;
 }
- 
+
 #wrapper.toggled {
     padding-left: 250px;
     overflow: scroll;
 }
- 
+
 #sidebar-wrapper {
     z-index: 1000;
     position: absolute; 
@@ -90,7 +112,7 @@ body{
 #wrapper.toggled #sidebar-wrapper {
     width: 250px;
 }
- 
+
 #page-content-wrapper {
     position: absolute;
     padding: 15px;
@@ -108,7 +130,7 @@ body{
     width: auto;
 }
 /* Sidebar Styles */
- 
+
 .sidebar-nav {
     position: absolute;
     top: 0;
@@ -118,40 +140,40 @@ body{
     list-style: none;
     margin-top: 2px;
 }
- 
+
 .sidebar-nav li {
     text-indent: 15px;
     line-height: 40px;
 }
- 
+
 .sidebar-nav li a {
     display: block;
     text-decoration: none;
     color: #999999;
 }
- 
+
 .sidebar-nav li a:hover {
     text-decoration: none;
     color: #fff;
     background: rgba(255,255,255,0.2);
     border-left: red 2px solid;
 }
- 
+
 .sidebar-nav li a:active,
 .sidebar-nav li a:focus {
     text-decoration: none;
 }
- 
+
 .sidebar-nav > .sidebar-brand {
     height: 65px;
     font-size: 18px;
     line-height: 60px;
 }
- 
+
 .sidebar-nav > .sidebar-brand a {
     color: #999999;
 }
- 
+
 .sidebar-nav > .sidebar-brand a:hover {
     color: #fff;
     background: none;
@@ -159,7 +181,7 @@ body{
 .no-margin{
     margin:0;
 }
- 
+
 @media(min-width:768px) {
     #wrapper {
         padding-left: 250px;
@@ -170,11 +192,11 @@ body{
     #wrapper.toggled {
         padding-left: 0;
     }
- 
+
     #sidebar-wrapper {
         width: 250px;
     }
- 
+
     #wrapper.toggled #sidebar-wrapper {
         width: 250px;
     }
@@ -184,8 +206,8 @@ body{
     #wrapper.toggled-2 #sidebar-wrapper:hover {
         width: 250px;
     }
- 
- 
+
+
     #page-content-wrapper {
         padding: 20px;
         position: relative;
@@ -194,7 +216,7 @@ body{
         -o-transition: all 0.5s ease;
         transition: all 0.5s ease;
     }
- 
+
     #wrapper.toggled #page-content-wrapper {
         position: relative;
         margin-right: 0;
@@ -209,6 +231,6 @@ body{
         -o-transition: all 0.5s ease;
         transition: all 0.5s ease;
         width: auto;
- 
+
     }
 }
