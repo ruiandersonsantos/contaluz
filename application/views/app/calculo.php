@@ -11,7 +11,6 @@
                         <div>
                             <?php include("mensagem.php") ?>
 
-
                             <div class="panel panel-info">
                                 <div class="panel-heading">
                                     <h3 class="panel-title">Marcações para cálculo</h3>
@@ -38,7 +37,7 @@
                                                         <span class="glyphicon glyphicon-modal-window"></span>
                                                     </button>
                                                 </span>
-                                                <input min="<?= $config['kwh_ultima'] + 1 ?>" value="" name="kwh_relogio" id="kwh_relogio" type="number" placeholder="Informe o Kwh atual" class="form-control"/>
+                                                <input  min="<?= $config['kwh_ultima'] + 1 ?>" value="" name="kwh_relogio" id="kwh_relogio" type="number" placeholder="Informe o Kwh atual" class="form-control"/>
                                             </div>
                                         </div>
                                     </div>
@@ -60,13 +59,9 @@
     </div>
 </section>
 
-<script src="<?= base_url("js_b/jquery-1.11.3.min.js") ?>"></script>
-<script src="<?= base_url("js_b/bootstrap.min.js") ?>"></script>
-<script src="<?= base_url("js_b/bootstrap-switch.js") ?>"></script>
-
-<script src="<?= base_url("js_b/main.js") ?>"></script>
-<script src="<?= base_url("js_b/highlight.js") ?>"></script>
-<script src="<?= base_url("js_b/jscript.js") ?>"></script>
+<script src="<?= base_url("js/jquery-2.1.1.min.js") ?>"></script>
+<script src="<?= base_url("js/materialize.min.js") ?>"></script>
+<script src="<?= base_url("js/jscript.js") ?>"></script>
 </body>
 </html>
 

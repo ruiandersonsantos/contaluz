@@ -15,7 +15,10 @@
         <link href = "<?= base_url("css_b/estilo.css") ?>" rel = "stylesheet" media = "screen">
 
         <!-- CSS personalizado -->
-        <link href = "<?= base_url("css_b/simple-sidebar.css") ?>" rel = "stylesheet" media = "screen">
+        <link href = "<?= base_url("css/estilo.css") ?>" rel = "stylesheet" media = "screen">
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="<?= base_url("css/materialize.min.css") ?>"  media="screen,projection">
+
 
         <script src="https://use.fontawesome.com/5ddc58b82b.js"></script>
         <title>Area Administrativa</title>
@@ -32,30 +35,15 @@
                 <a class="navbar-brand" href="#"><i class="fa fa-rocket fa-4"></i> Calcula Conta de Luz</a>
             </div><!-- navbar-header-->
 
+
+
+
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li class="active" ><button class="navbar-toggle collapse in" data-toggle="collapse" id="menu-toggle-2"> <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span></button></li>
                 </ul>
             </div>
             <!-- bs-example-navbar-collapse-1 -->
-
-        </nav>
-        <div id="wrapper">
-            <!-- Sidebar -->
-            <div id="sidebar-wrapper">
-                <ul class="sidebar-nav nav-pills nav-stacked" id="menu">
-
-                    <li>
-                        <div style="float: right;"id="div_msg_logado">
-                            <?php if ($this->session->userdata("usuario_logado")['origem'] == 'FACEBOOK') : ?>
-                                <img id="img_msg_logado-face" src="<?= $this->session->userdata("usuario_logado")['picture']['data']['url'] ?>"/>
-                            <?php endif ?>
-
-
-                            <?php if ($this->session->userdata("usuario_logado")['origem'] == 'GOOGLE') : ?>
-                                <img id="img_msg_logado-google" src="<?= $this->session->userdata("usuario_logado")['picture'] ?>"/>
-                            <?php endif ?>   
-                        </div>
 
                     </li>
 

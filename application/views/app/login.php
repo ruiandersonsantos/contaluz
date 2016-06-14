@@ -6,13 +6,13 @@
     <?php include("cabecalhosemmenu.php") ?>
 <?php endif ?>
 <section class="sessao_principal">
-    <div class="container">
+    <div class="container  col-xs-12" style="float: none;">
 
         <div style="margin-top: 70px;">
             <?php include("mensagem.php") ?>
         </div>
 
-
+        <!--        renderiza quando não está logado-->
         <?php if (!$this->session->userdata("usuario_logado")) : ?>
             <form class="form-horizontal" id="form_login" method="post" action="logar">
 
@@ -22,11 +22,19 @@
             </form>
 
         <?php endif ?>
+
+        <!--        renderiza quando está logado-->
+        <?php if ($this->session->userdata("usuario_logado")) : ?>
+
+          
+
+
+        <?php endif ?>
     </div>
 </section>
 
-<script src="<?= base_url("js_b/jquery-1.11.3.min.js") ?>"></script>
-<script src="<?= base_url("js_b/bootstrap.min.js") ?>"></script>
-<script src="<?= base_url("js_b/jscript.js") ?>"></script>
+<script src="<?= base_url("js/jquery-2.1.1.min.js") ?>"></script>
+<script src="<?= base_url("js/materialize.min.js") ?>"></script>
+<script src="<?= base_url("js/jscript.js") ?>"></script>
 </body>
 </html>
