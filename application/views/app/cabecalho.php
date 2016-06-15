@@ -23,13 +23,21 @@
 
     <body>
 
-        <nav class="navbar navbar-default no-margin">
+        <nav class="navbar navbar-default no-margin" id="id_navbar">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header fixed-brand">
+            <div class="navbar-header fixed-brand" id="div_navTitulo">
+                <div id="div_img_logo">
+                    <img id="img_logo"  src="<?= base_url("imagens/icone_play.png") ?>" alt=""/>
+                </div>
+                
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"  id="menu-toggle">
                     <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
                 </button>
-                <a class="navbar-brand" href="#">Calcula Conta de Luz</a>
+                
+              
+                    <a class="navbar-brand" id="a_titulo" href="#">Calcula Conta de Luz</a>
+               
+                
             </div><!-- navbar-header-->
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

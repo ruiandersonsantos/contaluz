@@ -2,7 +2,7 @@
     <?php include("cabecalho.php") ?>
 <?php endif ?>
 
-<section class="sessao_principal" style="margin-top: 40px;">
+<section class="sessao_principal" style="margin-top: 20px;">
     <div class="container  col-xs-12" style="float: none;">
         <div class="">
             <div class="col-xs-12">

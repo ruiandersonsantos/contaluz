@@ -8,7 +8,7 @@
 <?php endif ?>
 
 <?php if ($this->session->flashdata("sucesso")) : ?>
-    <h5 class="alert alert-success alert-dismissible">
+    <h5 class="alert alert-info alert-dismissible">
         <button type="button" class="close" data-dismiss="alert">
             <span aria-hidden="true">&times;</span>
         </button>

@@ -5,13 +5,27 @@
 /* CSS personalizado */
 body{
     margin-bottom: -11px;
-    
+    background: #E8F5E9;
+
 }
 
 /* Cabeçalho logado */
+
+#id_navbar {
+    margin: -1px;
+}
+
 #div_container-fluid {
     padding-left: 0px; 
     padding-right: 0px;
+}
+
+#div_navTitulo {
+    background: #004D40;
+}
+
+#div_img_logo {
+    float: left;
 }
 
 #div_menu-toogle {
@@ -19,9 +33,33 @@ body{
     padding-right: 0px;
 }
 
-#menu-toggle {
-    float: left; 
+
+#a_titulo {
+    color: white;
+}
+
+
+#img_logo {
+    height: 40px; 
+    width: 40px; 
+    margin-top: 7px;
     margin-left: 10px;
+
+}
+
+#menu-toggle {
+
+    margin-left: 10px;
+    background: #ddd;
+}
+
+a:link { 
+    text-decoration:none; 
+} 
+
+.link_social {
+    color: white; 
+    font-size: 18px;
 }
 
 #div_navbar-brand {
@@ -38,9 +76,9 @@ body{
 }
 
 #div_topo_menu {
-    height: 130px;
+    height: 140px;
     background: url(../imagens/imagem002.png);
-    
+
 }
 
 #div_nome {   
@@ -58,8 +96,8 @@ body{
 }
 
 #img_msg_logado-face, #img_msg_logado-google {
-    height: 50px; 
-    width: 50px;
+    height: 60px; 
+    width: 60px;
     position: relative;
     margin-top: 15px;
     top:50%;
@@ -68,10 +106,12 @@ body{
 
 }
 
-
 /* Fim - Cabeçalho logado */
 
+
 /* Sessão principal */
+
+
 #form_login {
     max-width: 450px;
     padding: 15px;
