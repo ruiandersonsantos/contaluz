@@ -6,7 +6,10 @@
         <!-- define a viewport -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- adicionar CSS Bootstrap -->
-        <link href="<?= base_url("css_b/bootstrap.min.css") ?>" rel="stylesheet">  
+        <link href="<?= base_url("css_b/bootstrap-social.css") ?>" rel="stylesheet"> 
+        
+         <!-- adicionar CSS Bootstrap -->
+        <link href="<?= base_url("css_b/bootstrap.min.css") ?>" rel="stylesheet"> 
 
         <link href="<?= base_url("css_b/bootstrap-switch.min.css") ?>" rel="stylesheet">  
 

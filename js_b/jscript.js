@@ -1,5 +1,7 @@
 $(document).ready(function () {
-
+    
+    escondeIcone();
+    
     $("#menu-toggle").click(function (e) {
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
@@ -59,12 +61,22 @@ $(document).ready(function () {
     });
 
     $('#btn_face').click(function () {
+        mostraIcone();
         window.location.href = $(this).attr('name');
     });
     
     $('#btn_google').click(function () {
+        mostraIcone();
         window.location.href = $(this).attr('name');
     });
+    
+    function escondeIcone(){
+        $("#div_icone_carregando").hide();
+    }
+    
+    function mostraIcone(){
+        $("#div_icone_carregando").show();
+    }
 
 });
 

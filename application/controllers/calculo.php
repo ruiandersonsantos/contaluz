@@ -18,7 +18,14 @@ class Calculo extends CI_Controller {
     public function index() {
         autoriza();
         $dados = array("config" => $this->configuracao);
-        $this->load->view('app/calculo', $dados);
+        if($this->configuracao){
+             $this->load->view('app/calculo', $dados);
+        }else{
+            $this->session->set_flashdata("error", "É necessário preencher as configurações para poder fazer o calculo!");
+            redirect('../../index.php//configuracao');
+            
+        }
+       
     }
 
     public function calcular() {

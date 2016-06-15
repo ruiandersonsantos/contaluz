@@ -12,6 +12,8 @@
             <?php include("mensagem.php") ?>
         </div>
 
+
+
         <!--        renderiza quando não está logado-->
         <?php if (!$this->session->userdata("usuario_logado")) : ?>
             <form class="form-horizontal" id="form_login" method="post" action="logar">
@@ -19,21 +21,27 @@
                     <img src="<?= base_url("imagens/logo_telaLogin.png") ?>" alt=""/>
                 </div>
 
-                <div style="text-align: center; margin-top: 50px;">
-                    <button id="btn_face" name="<?= base_url("/index.php/login/loginfacebook") ?>" style="width: 100%;" class="btn btn-primary"  type="button">
-                        <img style="float: left;" class="img-rounded" src="<?= base_url("imagens/icone_face.png") ?>" alt=""/>
+                <div id="div_icone_carregando" style="text-align: center;">
+                    <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+                    <p>Carregando...</p>
+                </div>
 
+                <div  style="margin-top: 50px;">
+                    <a class="btn btn-block btn-social btn-facebook" href="#" id="btn_face" name="<?= base_url("/index.php/login/loginfacebook") ?>" >
+                        <span class="fa fa-facebook fa-lg"></span>
                         Login com Facebook
-                    </button>
+                    </a>
                 </div>
 
                 <div style="text-align: center; margin-top: 50px;">
-                    <button id="btn_google" name="<?php echo $login_url; ?>" style="width: 100%;" class="btn btn-danger" type="button">
-                        <img style="float: left;" class="img-rounded" src="<?= base_url("imagens/icone-google.png") ?>" alt=""/>
-
+                    <a id="btn_google" name="<?php echo $login_url; ?>"class="btn btn-block btn-social btn-google" >
+                        <span class="fa fa-google-plus fa-lg"></span>
                         Login com Google
-                    </button>
+                    </a>
                 </div>
+              
+
+
 
 
                 <br>
