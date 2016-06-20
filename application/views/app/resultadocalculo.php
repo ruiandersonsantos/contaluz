@@ -16,7 +16,7 @@
                             </div>
                             <div class="panel-body">
 
-                                <?= $result["kwh"]?>
+                                <?= $result["kwh"]['verde']['resultado']?>
                             </div>
                         </div>
                         
@@ -27,7 +27,7 @@
                             </div>
                             <div class="panel-body">
 
-                                Resultado calculo bandeira amarela
+                                <?= $result["kwh"]['amarela']['resultado']?>
                             </div>
                         </div>
                         
@@ -38,7 +38,7 @@
                             </div>
                             <div class="panel-body">
 
-                                Resultado calculo bandeira vermelha
+                                <?= $result["kwh"]['vermelha']['resultado']?>
                             </div>
                         </div>
                         

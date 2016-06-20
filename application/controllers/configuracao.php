@@ -14,7 +14,6 @@ class Configuracao extends CI_Controller {
     public function index() {
         autoriza();
         $id_usuario = $this->session->userdata("usuario_logado")['id'];
-
         $configuracao = $this->config_model->buscarConfiguracao($id_usuario);
 
         if (sizeof($configuracao) == 0) {
