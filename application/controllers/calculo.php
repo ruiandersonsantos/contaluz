@@ -55,5 +55,5 @@ class Calculo extends CI_Controller {
             redirect('../../index.php/calculo');
         }
     }
-
+    
 }

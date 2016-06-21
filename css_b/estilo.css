@@ -6,8 +6,8 @@
 body{
     margin-bottom: -11px;
     background: #E8F5E9;
-
 }
+
 
 /* Cabeçalho logado */
 
@@ -111,14 +111,57 @@ a:link {
 
 /* Sessão principal */
 
+.sessao_principal {
+    height: 100%; 
+    width: 100%;    
+}
 
 #form_login {
     max-width: 450px;
-    padding: 15px;
-    margin: 80px auto;
+    
 }
 
 /* Fim - Sessão principal */
+
+
+/* Sessão config */
+
+.bandeiras {
+    margin-bottom: 10px;
+}
+
+/* Fim - Sessão config */
+
+
+
+/* sessão resultadoCalculo */
+
+
+.table>tbody>tr>td {
+    border-top: 0;
+}
+
+.align_td {
+    text-align: right;
+}
+
+.divPanel_resultCalculo {
+    box-shadow: 5px 10px 5px #888888;
+}
+
+#resultVerde {
+    background-color: #00E676;
+}
+#resultAmarelo {
+    background-color: #FFFF00;
+}
+#resultVermelho {
+    background-color: #F44336;
+}
+
+/* Fim - sessão resultadoCalculo */
+
+
 /* Toggle Styles */
 
 #wrapper {

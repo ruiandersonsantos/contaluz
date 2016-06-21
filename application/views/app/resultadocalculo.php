@@ -2,54 +2,116 @@
     <?php include("cabecalho.php") ?>
 <?php endif ?>
 
-<section class="sessao_principal" style="margin-top: 70px;">
-    <div class="container  col-xs-12" style="float: none;">
-        <div class="">
+<section class="sessao_principal" style="margin-top: 20px;">
+    <div class="container" style="float: none;">
+        <div class="row">
             <div class="col-xs-12">
 
-                <div class="row">
-                    <div>
-                      
-                        <div class="panel panel-success">
-                            <div class="panel-heading">
-                                <h3 class="panel-title">Resultado Bandeira verde</h3>
-                            </div>
-                            <div class="panel-body">
+                <!-- Resultado Bandeira Verde -->
+                <div class="panel divPanel_resultCalculo">
+                            <div class="panel-heading" id="resultVerde">
+                        <h5 class="panel-title">
+                            <strong>Resultado Bandeira Verde</strong>
+                            <span class="glyphicon glyphicon-flag" style="float: right;"></span>
+                        </h5>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td><strong>Descrição</strong></td>
+                                    <td class="align_td"><strong>Valor</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>Consumo</td>
+                                    <td class="align_td">0,00</td>
+                                </tr>
+                                <tr>
+                                    <td>Iluminação Publica</td>
+                                    <td class="align_td">0,00</td>
+                                </tr>
+                                <tr>
+                                    <td>Total</td>
+                                    <td class="align_td"><?= $result["kwh"]['verde']['resultado']?></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
 
-                                <?= $result["kwh"]['verde']['resultado']?>
-                            </div>
-                        </div>
-                        
-                        
-                         <div class="panel panel-warning">
-                            <div class="panel-heading">
-                                <h3 class="panel-title">Resultado Bandeira amarela</h3>
-                            </div>
-                            <div class="panel-body">
+                <!-- Resultado Bandeira Amarela -->
+                 <div class="panel divPanel_resultCalculo">
+                            <div class="panel-heading" id="resultAmarelo">
+                        <h5 class="panel-title">
+                            <strong>Resultado Bandeira Amarela</strong>
+                            <span class="glyphicon glyphicon-flag" style="float: right;"></span>
+                        </h5>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td><strong>Descrição</strong></td>
+                                    <td class="align_td"><strong>Valor</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>Consumo</td>
+                                    <td class="align_td">0,00</td>
+                                </tr>
+                                <tr>
+                                    <td>Bandeira Amarela</td>
+                                    <td class="align_td">0,00</td>
+                                </tr>
+                                <tr>
+                                    <td>Iluminação Publica</td>
+                                    <td class="align_td">0,00</td>
+                                </tr>
+                                <tr>
+                                    <td>Total</td>
+                                    <td class="align_td"><?= $result["kwh"]['amarela']['resultado']?></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
 
-                                <?= $result["kwh"]['amarela']['resultado']?>
-                            </div>
-                        </div>
-                        
-                        
-                        <div class="panel panel-danger">
-                            <div class="panel-heading">
-                                <h3 class="panel-title">Resultado Bandeira vermelha</h3>
-                            </div>
-                            <div class="panel-body">
-
-                                <?= $result["kwh"]['vermelha']['resultado']?>
-                            </div>
-                        </div>
-                        
-
-
+                <!-- Resultado Bandeira Vermelha -->
+                <div class="panel divPanel_resultCalculo">
+                            <div class="panel-heading" id="resultVermelho">
+                        <h5 class="panel-title">
+                            <strong>Resultado Bandeira Vermelha</strong>
+                            <span class="glyphicon glyphicon-flag" style="float: right;"></span>
+                        </h5>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td><strong>Descrição</strong></td>
+                                    <td class="align_td"><strong>Valor</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>Consumo</td>
+                                    <td class="align_td">0,00</td>
+                                </tr>
+                                <tr>
+                                    <td>Bandeira Vermelha</td>
+                                    <td class="align_td">0,00</td>
+                                </tr>
+                                <tr>
+                                    <td>Iluminação Publica</td>
+                                    <td class="align_td">0,00</td>
+                                </tr>
+                                <tr>
+                                    <td>Total</td>
+                                    <td class="align_td"><?= $result["kwh"]['vermelha']['resultado']?></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
 
             </div>
-
-
         </div>
     </div>
 </section>

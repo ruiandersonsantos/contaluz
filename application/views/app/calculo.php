@@ -4,7 +4,7 @@
 
 <section class="sessao_principal" style="margin-top: 20px;">
     <div class="container  col-xs-12" style="float: none;">
-        <div class="">
+        <div class="row">
             <div class="col-xs-12">
                 <form class="form-horizontal" id="form_login" method="post" action="calculo/calcular" style="max-width: 100%; margin: 5px;">
                     <div class="row">

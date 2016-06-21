@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 
-<html>
+<html style="height: 100%; width: 100%;">
     <head>
         <meta charset="UTF-8">
         <!-- define a viewport -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- adicionar CSS Bootstrap -->
         <link href="<?= base_url("css_b/bootstrap.min.css") ?>" rel="stylesheet"> 
-        
-         <!-- adicionar CSS Bootstrap -->
+
+        <!-- adicionar CSS Bootstrap -->
         <link href="<?= base_url("css_b/bootstrap-social.css") ?>" rel="stylesheet"> 
 
         <link href="<?= base_url("css_b/bootstrap-switch.min.css") ?>" rel="stylesheet">  
@@ -22,9 +22,12 @@
 
         <script src="https://use.fontawesome.com/5ddc58b82b.js"></script>
         <title>Area Administrativa</title>
+
     </head>
 
-    <body>
+    <body style="height: 100%; 
+          width: 100%; 
+          background-image: url(imagens/back_login4.jpg); ">
 
         <nav class="navbar navbar-default no-margin" id="id_navbar">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -32,12 +35,7 @@
                 <div id="div_img_logo">
                     <img id="img_logo"  src="<?= base_url("imagens/icone_play.png") ?>" alt=""/>
                 </div>
-                
-               
-              
-                    <a class="navbar-brand" id="a_titulo" href="#">Calcula Conta de Luz</a>
-               
-                
+                <a class="navbar-brand" id="a_titulo" href="#">Calcula Conta de Luz</a>  
             </div><!-- navbar-header-->
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -48,6 +46,6 @@
             <!-- bs-example-navbar-collapse-1 -->
 
         </nav>
-        
-      
+
+
         <!-- /#wrapper -->
