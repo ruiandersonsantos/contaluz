@@ -20,18 +20,27 @@
                             <tbody>
                                 <tr>
                                     <td><strong>Descrição</strong></td>
+                                    <td class="align_td"><strong>Quant.</strong></td>
+                                    <td class="align_td"><strong>Tarifa</strong></td>
                                     <td class="align_td"><strong>Valor</strong></td>
                                 </tr>
+                               
                                 <tr>
                                     <td>Consumo</td>
-                                    <td class="align_td">0,00</td>
+                                    <td class="align_td"><?= $result["kwh"]['verde']['total_kwh']?></td>
+                                    <td class="align_td"><?= $result["kwh"]['verde']['tarifa_verde']?></td>
+                                    <td class="align_td"><?= $result["kwh"]['verde']['total_verde']?></td>
                                 </tr>
                                 <tr>
-                                    <td>Iluminação Publica</td>
-                                    <td class="align_td">0,00</td>
+                                    <td>Ilum. Publica</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="align_td"><?= $result["kwh"]['verde']['taxa_iluminacao']?></td>
                                 </tr>
                                 <tr>
                                     <td>Total</td>
+                                    <td></td>
+                                    <td></td>
                                     <td class="align_td"><?= $result["kwh"]['verde']['resultado']?></td>
                                 </tr>
                             </tbody>
@@ -40,7 +49,7 @@
                 </div>
 
                 <!-- Resultado Bandeira Amarela -->
-                 <div class="panel divPanel_resultCalculo">
+                <div class="panel divPanel_resultCalculo">
                             <div class="panel-heading" id="resultAmarelo">
                         <h5 class="panel-title">
                             <strong>Resultado Bandeira Amarela</strong>
@@ -52,29 +61,42 @@
                             <tbody>
                                 <tr>
                                     <td><strong>Descrição</strong></td>
+                                    <td class="align_td"><strong>Quant.</strong></td>
+                                    <td class="align_td"><strong>Tarifa</strong></td>
                                     <td class="align_td"><strong>Valor</strong></td>
                                 </tr>
+                                
                                 <tr>
                                     <td>Consumo</td>
-                                    <td class="align_td">0,00</td>
+                                    <td class="align_td"><?= $result["kwh"]['verde']['total_kwh']?></td>
+                                    <td class="align_td"><?= $result["kwh"]['verde']['tarifa_verde']?></td>
+                                    <td class="align_td"><?= $result["kwh"]['verde']['total_verde']?></td>
+                                </tr>
+                               
+                                <tr>
+                                    <td>Adicional</td>
+                                    <td class="align_td"><?= $result["kwh"]['amarela']['total_kwh']?></td>
+                                    <td class="align_td"><?= $result["kwh"]['amarela']['tarifa_amarela']?></td>
+                                    <td class="align_td"><?= $result["kwh"]['amarela']['total_amarela']?></td>
                                 </tr>
                                 <tr>
-                                    <td>Bandeira Amarela</td>
-                                    <td class="align_td">0,00</td>
-                                </tr>
-                                <tr>
-                                    <td>Iluminação Publica</td>
-                                    <td class="align_td">0,00</td>
+                                    <td>Ilum. Publica</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="align_td"><?= $result["kwh"]['amarela']['taxa_iluminacao']?></td>
                                 </tr>
                                 <tr>
                                     <td>Total</td>
+                                     <td></td>
+                                    <td></td>
                                     <td class="align_td"><?= $result["kwh"]['amarela']['resultado']?></td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
-                </div>
-
+                </div> 
+                
+                
                 <!-- Resultado Bandeira Vermelha -->
                 <div class="panel divPanel_resultCalculo">
                             <div class="panel-heading" id="resultVermelho">
@@ -88,22 +110,34 @@
                             <tbody>
                                 <tr>
                                     <td><strong>Descrição</strong></td>
+                                    <td class="align_td"><strong>Quant.</strong></td>
+                                    <td class="align_td"><strong>Tarifa</strong></td>
                                     <td class="align_td"><strong>Valor</strong></td>
                                 </tr>
-                                <tr>
+                                
+                                 <tr>
                                     <td>Consumo</td>
-                                    <td class="align_td">0,00</td>
+                                    <td class="align_td"><?= $result["kwh"]['verde']['total_kwh']?></td>
+                                    <td class="align_td"><?= $result["kwh"]['verde']['tarifa_verde']?></td>
+                                    <td class="align_td"><?= $result["kwh"]['verde']['total_verde']?></td>
+                                </tr>
+                               
+                                <tr>
+                                    <td>Adicional</td>
+                                    <td class="align_td"><?= $result["kwh"]['vermelha']['total_kwh']?></td>
+                                    <td class="align_td"><?= $result["kwh"]['vermelha']['tarifa_vermelha']?></td>
+                                    <td class="align_td"><?= $result["kwh"]['vermelha']['total_vermelha']?></td>
                                 </tr>
                                 <tr>
-                                    <td>Bandeira Vermelha</td>
-                                    <td class="align_td">0,00</td>
-                                </tr>
-                                <tr>
-                                    <td>Iluminação Publica</td>
-                                    <td class="align_td">0,00</td>
+                                    <td>Ilum. Publica</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="align_td"><?= $result["kwh"]['vermelha']['taxa_iluminacao']?></td>
                                 </tr>
                                 <tr>
                                     <td>Total</td>
+                                    <td></td>
+                                    <td></td>
                                     <td class="align_td"><?= $result["kwh"]['vermelha']['resultado']?></td>
                                 </tr>
                             </tbody>
