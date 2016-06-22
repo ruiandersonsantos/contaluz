@@ -21,7 +21,7 @@
 
 
                                             <div class="input-group">
-                                                <span class="input-group-addon" id="basic-addon3">Ultimo Kwh</span>
+                                                <span class="input-group-addon" id="basic-addon3">Ultima Marcação Kwh</span>
                                                 <input  disabled="disabled" value="<?= $config['kwh_ultima'] ?>" name="kwh_ultima" id="kwh_ultima" type="number" class="form-control"/>
                                             </div>
 

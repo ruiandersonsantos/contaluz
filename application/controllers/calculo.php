@@ -42,18 +42,18 @@ class Calculo extends CI_Controller {
             $id_usuario = $this->session->userdata("usuario_logado")['id'];
             $configuracao = $this->config_model->buscarConfiguracao($id_usuario);
 
+            if (abs($marcacao) <= abs($configuracao['kwh_ultima'])) {
+                $this->session->set_flashdata("error", "Marcação atual não pode ser menor ou igual que ultima marcação informada!");
+                redirect('../../index.php/calculo');
+            }
+
             $resultado['kwh'] = calcula($marcacao, $configuracao);
-
-
-
             $dados = array("result" => $resultado);
-
-
             $this->load->view('app/resultadocalculo', $dados);
         } else {
             $this->session->set_flashdata("error", "Valor informado incorreto!");
             redirect('../../index.php/calculo');
         }
     }
-    
+
 }
